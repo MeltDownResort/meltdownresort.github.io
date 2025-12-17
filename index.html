@@ -1,6 +1,46 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta charset="UTF-8">
+<title>Meltdown Resort</title>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  background: url("meltdown.jpg.png") no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Bottom fade */
+.fade {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+}
+
+/* Text label */
+.label {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255,255,255,0.85);
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+</style>
+</head>
+
 <body>
-<img src="meltdown.jpg.png" style="width:100%;height:auto;">
+  <div class="fade"></div>
+  <div class="label">CONCEPT PHASE</div>
 </body>
 </html>
